@@ -1,0 +1,400 @@
+body {
+    margin: 0;
+    background-color: rgb(0, 0, 0);
+}
+
+@font-face {
+    font-family: "fake Receipt";
+    src: url(Fake\ Receipt.otf) format("truetype");
+}
+
+
+/*--------DIV'S--------*/
+
+#hele {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#subhele {
+    display: flex;
+    flex-direction: column;
+
+}
+
+#topdiv {
+    display: flex;
+    flex-direction: row;
+
+}
+
+#leftdiv {
+    flex: 1;
+}
+
+#leftad {
+    width: 30vh;
+    height: 100%;
+
+}
+
+#middiv {
+    flex: 3;
+
+}
+
+
+/*-----GAME PIC'S--------*/
+
+#gamediv {
+    height: 100%;
+
+}
+
+#pregame {
+    height: 80vh;
+    width: 130vh;
+    
+}
+
+#loadinggun {
+    height: 80vh;
+    width: 130vh;
+    display: none;
+
+}
+
+#gamechoice {
+    bottom: 10000cm;
+    height: 80vh;
+    width: 130vh;
+    display: none;
+
+}
+
+#playerselfshot {
+    height: 80vh;
+    width: 130vh;
+    display: none;
+
+}
+
+#playersdealershot {
+    height: 80vh;
+    width: 130vh;
+    display: none;
+
+}
+
+#dealerselfshot {
+    height: 80vh;
+    width: 130vh;
+    display: none;
+
+}
+
+#dealersplayershot {
+    height: 80vh;
+    width: 130vh;
+    display: none;
+
+}
+
+#dealersturn {
+    height: 80vh;
+    width: 130vh;
+    display: none;
+
+}
+
+#buffdealer{
+    height: 80vh;
+    width: 130vh;
+    display: none;
+
+}
+
+#homelessdealer {
+    height: 80vh;
+    width: 130vh;
+    display: none;
+
+}
+
+
+/*-----------TEXT BOXES-------*/
+
+#ammocount{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: aquamarine;
+    font-family: "Fake Receipt", monospace;
+}
+
+#blanktxt{
+        position: fixed;
+    bottom: 65%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    color: rgb(36, 144, 238);
+    font-family: "Fake Receipt", monospace;
+        display: inline-block;
+    transform: rotate(20deg);
+    display: none;
+}
+
+#livetxt{
+    position: fixed;
+    bottom: 65%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    color: red;
+    font-family: "Fake Receipt", monospace;
+    font-size: xx-large;
+    display: inline-block;
+    transform: rotate(320deg);
+    display: none;
+    border-color: black;
+}
+
+
+/*-----------HEALTH-------*/
+
+#dealerhltdiv{
+    display: none;
+    flex-direction: row;
+   
+
+}
+
+
+#dealername{
+display: flex;
+position: absolute;
+margin: 0;
+color: aquamarine;
+top: 15.5%;
+left: 16%;
+font-family: "Fake Receipt", monospace;
+}
+
+#dealerhealth1{
+    position: absolute;
+    display: flex;
+    top: 15%;
+    left: 25%;
+    height: 5%;
+    width: auto;
+
+}
+
+#dealerhealth2{
+    position: absolute;
+    display: flex;
+    top: 15%;
+    left: 28%;
+    height: 5%;
+    width: auto;
+
+}
+
+#dealerhealth3{
+    position: absolute;
+    display: flex;
+    top: 15%;
+    left: 31%;
+    height: 5%;
+    width: auto;
+
+}
+
+#playerhltdiv{
+    display: none;
+    flex-direction: row;
+
+}
+
+#playername{
+display: flex;
+position: absolute;
+margin: 0;
+color: aquamarine;
+top: 60.5%;
+left: 20%;
+font-family: "Fake Receipt", monospace;
+
+
+}
+
+#playerhealth1{
+    position: absolute;
+    display: flex;
+    top: 60%;
+    left: 25%;
+    height: 5%;
+    width: auto;
+
+}
+
+#playerhealth2{
+    position: absolute;
+    display: flex;
+    top: 60%;
+    left: 28%;
+    height: 5%;
+    width: auto;
+
+}
+
+#playerhealth3{
+    position: absolute;
+    display: flex;
+    top: 60%;
+    left: 31%;
+    height: 5%;
+    width: auto;
+
+}
+
+/*-------BUTTONS------*/
+
+.gamestart {
+    display: none;
+}
+
+#startbutton {
+    position: absolute;
+    top: 45%;
+    left: 47%;
+    background-color: red;
+    font-family: "Fake Receipt", monospace;
+    cursor: pointer;
+
+}
+
+#rulesbutton {
+    position: absolute;
+    top: 50%;
+    left: 47%;
+    background-color: rgb(36, 144, 238);
+    font-family: "Fake Receipt", monospace;
+    cursor: pointer;
+
+}
+
+
+#playerbtnchoice {
+    position: absolute;
+    bottom: 20.5vh;
+    left: 95vh;
+    width: 35vh;
+    height: 18vh;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    color: transparent;
+    border-color: aquamarine;
+    cursor: pointer;
+    display: none;
+    opacity: 65%;
+}
+
+#dealerbtnchoice {
+    position: absolute;
+    top: 16vh;
+    left: 94vh;
+    width: 25vh;
+    height: 18vh;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    color: transparent;
+    border-color: aquamarine;
+    cursor: pointer;
+    display: none;
+    opacity: 65%;
+}
+
+
+.quitbutton{
+position: absolute;
+top: 2vh;
+left: 30.5vh;
+ background: aquamarine;
+ border: none;
+font-family: "Fake Receipt", monospace;
+    cursor: pointer;
+
+} 
+
+
+#quitbutdiv {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #222;
+    padding: 20px;
+    border: 2px solid aquamarine;
+    z-index: 999;
+}
+
+
+#givinguppop {
+    font-family: "Fake Receipt", monospace;
+    color: aquamarine;
+    z-index: 999 ;
+    cursor: pointer;
+
+}
+
+#givenup {
+    font-family: "Fake Receipt", monospace;
+    background-color: rgb(36, 144, 238);
+    cursor: pointer;
+
+}
+
+#givendown {
+    font-family: "Fake Receipt", monospace;
+    background-color: red;
+    cursor: pointer;
+
+}
+
+
+/*---------AD'S-------*/
+
+#rightdiv {
+    flex: 1;
+
+}
+
+#rightad {
+    width: 32vh;
+    height: 40vh;
+}
+
+#rightad2 {
+    width: 32vh;
+    height: 40vh;
+
+}
+
+#bottomdiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#bottomaddiv {
+    width: 100%;
+    height: 19VH;
+    background-image: url("hotmilfsad1.jpg"), url("hotmilfsad2.jpg");
+    background-repeat: repeat;
+    background-position: 0 0, 50px 50px;
+}
